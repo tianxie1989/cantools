@@ -48,7 +48,7 @@ messages and signals.
 
    >>> import cantools
    >>> from pprint import pprint
-   >>> db = cantools._decode.database.load_file('tests/files/motohawk.dbc')
+   >>> db = cantools._decode.database.load_file('tests/files/motohawk.dbc') # different from github source!!
    >>> db.messages
    [message('ExampleMessage', 0x1f0, False, 8, 'Example message used as template in MotoHawk models.')]
    >>> example_message = db.get_message_by_name('ExampleMessage')
